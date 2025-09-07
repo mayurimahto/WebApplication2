@@ -1,4 +1,4 @@
-package com.thinking.machines.hr.beans;
+package com.web.application.hr.beans;
 
 public class MessageBean implements java.io.Serializable
 {
