@@ -45,7 +45,7 @@
 			<jsp:getProperty name='errorBean' property='error'/>
 		</span>
 		
-		<form method='post' action='WebApplication2/AddDesignation.jsp' onsubmit='return validateForm(this)'>
+		<form method='post' action='/WebApplication2/AddDesignation.jsp' onsubmit='return validateForm(this)'>
 			Designation
 			<input type='text' id='title' name='title' maxLength='35' size='36' value='${designationBean.title}'>
 			<span id='titleErrorSection' class='error'><span><br>
