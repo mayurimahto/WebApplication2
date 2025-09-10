@@ -11,3 +11,8 @@ function validateForm(frm)
 	}
 	return true;
 }
+
+function cancelAddition()
+{
+	document.getElementById('cancelAdditionForm').submit();
+}
