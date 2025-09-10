@@ -3,4 +3,4 @@
 //bean m data set kar dia
 <jsp:setProperty name='designationBean' property='*'/>
 //request ko forward kardiya
-<jsp:forward page='/addDesigntion'/>
+<jsp:forward page='/addDesignation'/>

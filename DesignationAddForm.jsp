@@ -1,5 +1,5 @@
 <jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.DesignationBean'/>
-<jsp:useBean id='errorBean' scoope='request' class='com.web.application.hr.beans.ErrorBean'/>
+<jsp:useBean id='errorBean' scope='request' class='com.web.application.hr.beans.ErrorBean'/>
 
 <!DOCTYPE HTML>
 <html lang='en'>
