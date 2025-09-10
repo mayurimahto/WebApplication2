@@ -1,5 +1,4 @@
-<jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.DesignationBean'/>
-<jsp:useBean id='errorBean' scoope='request' class='com.web.application.hr.beans.ErrorBean'/>
+<jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.MessageBean'/>
 
 <!DOCTYPE HTML>
 <html lang='en'>
@@ -39,20 +38,9 @@
 	<!-- right panel starts here -->
 
 	<div class='content-right-panel'>
-		<h2>Designation (Add Module)</h2>
+		<h2>${messageBean.heading}</h2>
 
-		<span class='error'>
-			<jsp:getProperty name='errorBean' property='error'/>
-		</span>
-		
-		<form method='post' action='WebApplication2/AddDesignation.jsp' onsubmit='return validateForm(this)'>
-			Designation
-			<input type='text' id='title' name='title' maxLength='35' size='36' value='${designationBean.title}'>
-			<span id='titleErrorSection' class='error'><span><br>
-			
-			<button type='submit'>Add</button>
-			<button type='button' onclick='cancelAddition()'>Cancel</button>
-		</form>
+		${messageBean.message}
 	</div>
 
 	<!-- right panel ends here -->
