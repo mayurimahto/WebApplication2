@@ -73,7 +73,7 @@
 
 	<!-- Main container ends here -->
 
-	<form id='cancelAdditionForm' action='WebApplication2/designationsView'>
+	<form id='cancelAdditionForm' action='/WebApplication2/designationsView'>
 	</form>
 
 </body>
