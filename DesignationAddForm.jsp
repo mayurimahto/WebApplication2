@@ -16,7 +16,7 @@
 	<!-- header starts here -->
 
 	<div class='header'>
-		<img src='WebApplication2/images/logo.png' class='logo'>
+		<img src='/WebApplication2/images/logo.png' class='logo'>
 		<div class='brand-name'>HR Application</div>
 	</div>
 
