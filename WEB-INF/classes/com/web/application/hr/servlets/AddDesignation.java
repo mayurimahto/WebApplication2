@@ -52,7 +52,6 @@ public class AddDesignation extends HttpServlet
 				requestDispatcher=request.getRequestDispatcher("/DesignationAddForm.jsp");
 				requestDispatcher.forward(request, response);
 			}
-			
 		}
 		catch(Exception exception)
 		{
