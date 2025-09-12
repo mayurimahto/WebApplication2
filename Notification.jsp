@@ -1,3 +1,4 @@
+<%@ page isELIgnored="false" %>
 <jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.MessageBean'/>
 
 <!DOCTYPE HTML>
@@ -40,7 +41,10 @@
 	<div class='content-right-panel'>
 		<h2>${messageBean.heading}</h2>
 
-		${messageBean.message}
+		${messageBean.message}<br>
+
+
+
 	</div>
 
 	<!-- right panel ends here -->

@@ -1,3 +1,5 @@
+<%@ page isELIgnored="false" %>
+
 <jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.DesignationBean'/>
 <jsp:useBean id='errorBean' scope='request' class='com.web.application.hr.beans.ErrorBean'/>
 
@@ -48,7 +50,7 @@
 		<form method='post' action='/WebApplication2/AddDesignation.jsp' onsubmit='return validateForm(this)'>
 			Designation
 			<input type='text' id='title' name='title' maxLength='35' size='36' value='${designationBean.title}'>
-			<span id='titleErrorSection' class='error'><span><br>
+			<span id='titleErrorSection' class='error'></span><br>
 			
 			<button type='submit'>Add</button>
 			<button type='button' onclick='cancelAddition()'>Cancel</button>
