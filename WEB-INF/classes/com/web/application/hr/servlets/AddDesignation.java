@@ -34,7 +34,7 @@ public class AddDesignation extends HttpServlet
 				messageBean.setButtonOneText("Yes");
 				messageBean.setButtonOneAction("DesignationAddForm.jsp");
 				messageBean.setButtonTwoText("No");
-				messageBean.setButtonTwoAction("Designation.jsp");
+				messageBean.setButtonTwoAction("Designations.jsp");
 				request.setAttribute("messageBean", messageBean);
 
 				RequestDispatcher requestDispatcher;
@@ -56,7 +56,7 @@ public class AddDesignation extends HttpServlet
 		catch(Exception exception)
 		{
 			RequestDispatcher requestDispatcher;
-			requestDispatcher=request.getRequestDispatcher("ErrorPage.jsp");
+			requestDispatcher=request.getRequestDispatcher("/ErrorPage.jsp");
 
 			try
 			{
