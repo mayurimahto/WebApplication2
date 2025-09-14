@@ -10,6 +10,7 @@ public class AddDesignation extends HttpServlet
 {
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 	{
+		response.setContentType("text/html;charset=UTF-8");
 		try
 		{
 			DesignationBean designationBean;
