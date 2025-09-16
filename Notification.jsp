@@ -1,4 +1,3 @@
-<%@ page isELIgnored="false" %>
 <jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.MessageBean'/>
 
 <!DOCTYPE HTML>
@@ -42,8 +41,37 @@
 		<h2>${messageBean.heading}</h2>
 
 		${messageBean.message}<br>
+		
+		<% //scriplet
+		if(messageBean.getGenerateButtons()==true)
+		{
+		%>
 
+		<table>
+		<tr>
+		<td>
+		<form action='/WebApplication2/${messageBean.buttonOneAction}'>
+		<button>${,essageBean.buttonOneText}</button>
+		</form>
+		</td>
 
+			<%
+			if(messageBean.getGenerateTwoButtons()==true)
+			{
+			%>
+			<td>
+			<form action='/WebApplication2/${messageBean.buttonTwoAction}'>
+			<button>${messageBean.buttonTwoText}</button>
+			</form>
+			</td>
+			<%
+			}
+			%>
+		</tr>
+		</table>
+		<%
+		}
+		%>
 
 	</div>
 
@@ -64,9 +92,6 @@
 	</div>
 
 	<!-- Main container ends here -->
-
-	<form id='cancelAdditionForm' action='/WebApplication2/designationsView'>
-	</form>
 
 </body>
 </html>
