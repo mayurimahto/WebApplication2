@@ -1,3 +1,4 @@
+<%@taglib uri='/WEB-INF/mytags/tmtags.tld' prefix='tm' %>
 <jsp:useBean id='designationBean' scope='request' class='com.web.application.hr.beans.MessageBean'/>
 
 <!DOCTYPE HTML>
@@ -42,10 +43,7 @@
 
 		${messageBean.message}<br>
 		
-		<% //scriplet
-		if(messageBean.getGenerateButtons()==true)
-		{
-		%>
+		<tm:If condition='${messageBean.generateButtons}'>
 
 		<table>
 		<tr>
@@ -55,23 +53,21 @@
 		</form>
 		</td>
 
-			<%
-			if(messageBean.getGenerateTwoButtons()==true)
-			{
-			%>
+			<tm:If condition='${messageBean.generateTwoButtons}'>			
+
 			<td>
 			<form action='/WebApplication2/${messageBean.buttonTwoAction}'>
 			<button>${messageBean.buttonTwoText}</button>
 			</form>
 			</td>
-			<%
-			}
-			%>
+
+			</tm:If>
+			
 		</tr>
 		</table>
-		<%
-		}
-		%>
+		
+		</tm:If>
+		
 
 	</div>
 
